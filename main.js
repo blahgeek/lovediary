@@ -78,8 +78,8 @@ var insert_row = function(title, text, val) {
             }
         },
         position: {
-            my: val > 0 ? 'center left' : 'center right',
-            at: val > 0 ? 'center right' : 'center left'
+            my: 'top center',
+            at: 'bottom center'
         }
     });
 };
