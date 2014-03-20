@@ -1,0 +1,104 @@
+input[type="range"]{
+    -webkit-appearance: none;
+    -moz-apperance: none;
+    border-radius: 0;
+    height: 15px;
+    width: 200px;
+}
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    border: 0;
+    height: 15px;
+    width: 0;
+}
+.right-page input[type="range"] {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        color-stop(0.45, #e67e22),
+        color-stop(0.45, #eaeaea)
+        );
+}
+.left-page input[type="range"] {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        color-stop(1, #eaeaea),
+        color-stop(1, #3498db)
+        );
+}
+
+html, body, .full-container {
+    height: 100%;
+    width: 100%;
+    background-color: #ecf0f1;
+}
+.full-container {
+    width: 450px;
+    margin: 35px auto;
+}
+.half-page p {
+    font-size: 16px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+.half-page h1{
+    margin-top: 5px;
+    margin-bottom: 14px;
+}
+.right-page {
+    color: #e67e22;
+}
+.left-page {
+    color: #3498db;
+    text-align: right;
+}
+.left-page textarea{
+    visibility: hidden;
+    width: 200px;
+    height: 70px;
+}
+.right-page textarea {
+    width: 400px;
+    height: 70px;
+    margin-left: -200px;
+    border: 0;
+    color: #5b5b5b;
+    font-size: 18px;
+    background-color: #eaeaea;
+}
+.input {
+    margin-bottom: 25px;
+}
+.input .btn-group {
+    margin-top: 5px;
+}
+.bar-container {
+    background-color: #ecf0f1;
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin-bottom: 3px;
+    width: 200px;
+    height: 16px;
+}
+.bar-container.left {
+    margin-left: -215px; // -15px
+}
+.bar-container .bar {
+    float: left;
+    background-color: #e67e22;
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    height: 100%;
+    width: 0%;
+    -webkit-transition: width 2s;
+    transition: width 2s;
+}
+.bar-container.left .bar {
+    float: right;
+    background-color: #3498db;
+}

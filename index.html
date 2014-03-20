@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Love Diary</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/qtip2/jquery.qtip.css">
+    <!-- range input style: http://jsfiddle.net/JnrvG/1/ -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <div class="full-container">
+        <div class="row">
+
+            <div class="half-page left-page col-xs-6">
+                <div class="row"><div class="pull-right">
+                    <p>I&nbsp;</p>
+                    <p>but I don't feel it&nbsp;</p>
+                    <p>So I&nbsp;</p>
+                    <p>To remind me&nbsp;</p>
+                    <h1 class="title">Do I hate or&nbsp;</h1>
+                </div></div>
+
+                <div class="row input"><div class="pull-right">
+                    <textarea></textarea>
+                    <input type="range" min="0" max="100" step="1" value="100">
+                </div></div>
+            </div>
+
+            <div class="half-page right-page col-xs-6">
+                <div class="row"><div class="pull-left">
+                    <p>love you</p>
+                    <p>sometimes</p>
+                    <p>build this</p>
+                    <p>how much I love you</p>
+                    <h1 class="title">love you more</h1>
+                </div></div>
+
+                <div class="row input"><div class="pull-left">
+                    <textarea id="text" placeholder="Write some words, set the mood bar, click '+'."></textarea>
+                    <input type="range" min="0" max="100" step="1" value="45">
+                    <div class="btn-group pull-right">
+                        <button type="button" class="btn btn-default btn-sm" id="btn-add">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                        <button type="button" class="btn btn-default btn-sm" id="btn-remove">
+                            <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                    </div>
+                </div></div>
+
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="bower_components/momentjs/moment.js"></script>
+    <script type="text/javascript" src="bower_components/qtip2/jquery.qtip.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
