@@ -40,11 +40,13 @@ html, body, .full-container {
     margin: 35px auto;
 }
 .half-page p {
+    font-family: 'The Girl Next Door', cursive;
     font-size: 16px;
     margin-bottom: 2px;
     margin-top: 2px;
 }
 .half-page h1{
+    font-family: 'The Girl Next Door', cursive;
     margin-top: 5px;
     margin-bottom: 14px;
 }
